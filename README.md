@@ -1,4 +1,4 @@
-# Shua - A multi-changing data and character output classes
+# Shua - A multi-changing data and character output classes.(Python 3.x)
 
 
 ----------

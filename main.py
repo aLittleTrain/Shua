@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 A multi-changing data and character output classes.
 Copyright © 2016 aLittleTrain <alittletrain@gmail.com>
