@@ -8,9 +8,9 @@ This is a **very simple** python library that provides a variety of output forma
 ----------
 ## Methods
 ```python
-Shua.top()
-Shua.bottom()
-Shua.row()
+Shua.top(char='*', nums=15, rows=1, blank=(0, 0, 0, 0), blanks=(0, 0, 0, 0))
+Shua.bottom(char='*', nums=15, rows=1, blank=(0, 0, 0, 0), blanks=(0, 0, 0, 0))
+Shua.row(char=('|', 1), fields=(), blank=(0, 0), blanks=(0, 0), length=True)
 ```
 
 
@@ -78,4 +78,118 @@ Shua.row()
 
 ----------
 
+## Examples
+```python
+Shua.top()
+> ***************
 
+```
+
+
+----------
+
+```python
+Shua.top(char='-', nums=20, rows=3)
+> --------------------
+  --------------------
+  --------------------
+```
+
+
+----------
+```python
+Shua.top(char='-', nums=20, rows=3, blank=(2, 2, 2, 2))
+> 
+
+  --------------------  
+
+
+
+
+  --------------------  
+
+
+
+
+  --------------------  
+
+
+
+
+```
+
+
+----------
+```python
+Shua.top(char='-', nums=20, rows=3, blank=(2, 2, 2, 2))
+> 
+  --------------------  
+  --------------------  
+  --------------------  
+
+
+
+
+```
+
+
+----------
+```python
+Shua.bottom(char='/', nums=11)
+> ///////////
+```
+
+
+----------
+```python
+Shua.bottom(char='/', nums=11, rows=2, blank=(0, 0, 1, 0))
+> ///////////
+
+  ///////////
+```
+
+
+----------
+```python
+Shua.bottom(char='/', nums=11, rows=2, blank=(0, 0, 1, 6), blanks=(0, 0, 0, 5))
+>            ///////////
+
+             ///////////
+
+
+
+```
+
+
+----------
+```python
+Shua.row(fields=('Shua',))
+> |Shua|
+ The length of string is 6
+```
+
+
+----------
+```python
+Shua.row(fields=('Shua', 'sHua'), blank=(3, 3))
+> |   Shua   |   sHua   |
+ The length of string is 23
+```
+
+
+----------
+```python
+Shua.row(fields=('Shua', 'sHua','shUa'), blank=(3, 3), blanks=(2, 2))
+>   |   Shua   |   sHua   |     shUa   |
+ The length of string is 38
+```
+
+
+----------
+```python
+Shua.row(fields=('Shua', 'sHua', 'shUa', 'shuA'), blank=(3, 3), blanks=(2, 2), length=False)
+>   |   Shua   |   sHua   |     shUa   |     shuA   |
+```
+
+
+----------

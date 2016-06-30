@@ -2,6 +2,8 @@
 A multi-changing data and character output classes.
 Copyright © 2016 aLittleTrain <alittletrain@gmail.com>
 """
+
+
 class Shua():
     @staticmethod
     def top(char='*', nums=15, rows=1, blank=(0, 0, 0, 0), blanks=(0, 0, 0, 0)):
