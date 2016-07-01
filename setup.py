@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='Shua',
-    version='1.0',
+    version='0.1',
     packages=[''],
     url='https://github.com/aLittleTrain/Shua',
     license='LGPL',
