@@ -207,4 +207,6 @@ Shua.row(fields=('Shua', 'sHua', 'shUa', 'shuA'), padding=(3, 3), margin=(2, 2),
 ### 0.1
  1. Overwrite `blank` to `padding`
  2. Overwrite `blanks` to `margin`
+### 0.2
+ 1. Change the `top` method output
     

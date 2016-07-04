@@ -35,6 +35,7 @@ class Shua():
 
         :return:
         """
+
         line_top = padding[0]
         line_right = padding[1]
         line_bottom = padding[2]
@@ -44,10 +45,13 @@ class Shua():
         lines_right = margin[1]
         lines_bottom = margin[2]
         lines_left = margin[3]
-        print(
-            ('\n' * lines_top) + ((' ' * lines_left) + (
-                '\n' * line_top + (' ' * line_left) + char * nums + (' ' * line_right) + ('\n' * line_bottom)) + (
-                                      ' ' * lines_right) + '\n') * rows + ('\n' * lines_bottom))
+        # print(
+        #     ('\n' * lines_top) + ((' ' * lines_left) + (
+        #         '\n' * line_top + (' ' * line_left) + char * nums + (' ' * line_right) + ('\n' * line_bottom)) + (
+        #                               ' ' * lines_right) + '\n') * rows + ('\n' * lines_bottom))
+        print(''.join((('\n' * lines_top), ((' ' * lines_left) + (
+            '\n' * line_top + (' ' * line_left) + char * nums + (' ' * line_right) + ('\n' * line_bottom)) + (
+                                                ' ' * lines_right) + '\n') * rows, ('\n' * lines_bottom))))
         return
 
     @staticmethod
